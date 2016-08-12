@@ -31,7 +31,7 @@ public class GameTest{
 
   @Test
   public void checkTheDeck(){
-    assertEquals(52, deck.getCards());
+    assertEquals(52, deck.getCards().size());
   }
 
 

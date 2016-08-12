@@ -8,7 +8,6 @@ public class Player{
   private String name;
 
   public Player(String name){
-    
     this.name = name;
     this.hand = new ArrayList<Card>();
   }
@@ -17,9 +16,14 @@ public class Player{
     return this.name;
   }
 
+  public void dealHand(Card card1){
+      this.hand.add(card1);
+  }
+
   public int countHand(){
     return hand.size();
   }
+
 
   
 

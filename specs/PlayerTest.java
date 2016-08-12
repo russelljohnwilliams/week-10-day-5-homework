@@ -11,6 +11,7 @@ public class PlayerTest{
   Card card1;
   Card card2;
   Card card3;
+  Game game;
 
   @Before
   public void before(){
@@ -18,6 +19,7 @@ public class PlayerTest{
     card1 = new Card(SuitType.SPADE, NumberType.ACE);
     card2 = new Card(SuitType.HEART, NumberType.FOUR);
     card3 = new Card(SuitType.DIAMOND, NumberType.KING);
+    game = new Game();  
   }
 
   @Test
@@ -25,10 +27,12 @@ public class PlayerTest{
     assertEquals(0, player1.countHand());
   }
 
-  // @Test
-  // pulic void playerHasCards(){
-  //   asssertEquals(3, player1.countHand());
-  // }
+  @Test
+  public void playerHasCards(){
+    // game.dealCards();
+    player1.dealHand(card1);
+    assertEquals(1, player1.countHand());
+  }
 
 }
 

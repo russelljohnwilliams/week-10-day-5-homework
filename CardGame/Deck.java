@@ -30,6 +30,11 @@ public class Deck{
     Collections.shuffle(deck);
   }
 
+  // public ArrayList<Card> getDeck(){
+  //   return this.deck;
+  // }
+
+
 
 }
 

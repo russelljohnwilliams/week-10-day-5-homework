@@ -24,5 +24,11 @@ public class PlayerTest{
   public void emptyHand(){
     assertEquals(0, player1.countHand());
   }
+
+  // @Test
+  // pulic void playerHasCards(){
+  //   asssertEquals(3, player1.countHand());
+  // }
+
 }
 

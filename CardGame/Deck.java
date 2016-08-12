@@ -7,7 +7,7 @@ public class Deck{
   private ArrayList<Card> deck;
   private SuitType suits;
   private NumberType numbers;
- 
+
 
   public Deck(SuitType suits, NumberType numbers){
     this.deck = new ArrayList<Card>();
@@ -30,9 +30,6 @@ public class Deck{
     Collections.shuffle(deck);
   }
 
-  public void dealCardsToPlayers(){
-    
-  }
 
 }
 

@@ -13,11 +13,11 @@ public class Game{
 
   public Game(){
     this.players = new ArrayList<Player>();
-    this.deck = new Deck(suits, numbers);
-    this.cards = deck.getCards();
+    this.deck = new Deck(suits, numbers); //<< this allows access to Deck Class!!!
+    this.cards = deck.getCards();  //<< this creates fills a new ArrayList<Card> from Deck Class!!! 
   }
 
-public ArrayList<Card> getArrayList(){
+public ArrayList<Card> getCards(){
   return cards;
 }
 

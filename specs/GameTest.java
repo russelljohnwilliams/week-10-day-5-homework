@@ -32,14 +32,14 @@ public class GameTest{
   @Test
   public void printArrayList(){
     System.out.println("HERE IT IS");
-    System.out.println(game.getArrayList());
+    System.out.println(game.getCards());
   }
 
   @Test
   public void checkTheDeck(){
     // deck.getCards();
     game.removeCard();
-    assertEquals(51 , deck.getCards().size());
+    assertEquals(51 , game.getCards().size());
   }
 
   // @Test

@@ -22,27 +22,27 @@ public class GameTest{
     player2 = new Player("Margot");
   }
 
+  @Test
+  public void canAddPlayers(){
+    game.addPlayer(player1);
+    game.addPlayer(player2);
+    assertEquals(2, game.countPlayers());
+  }
+
   // @Test
-  // public void canAddPlayers(){
-  //   game.addPlayer(player1);
-  //   game.addPlayer(player2);
-  //   assertEquals(2, game.countPlayers());
+  // public void checkTheDeck(){
+  //   deck.getCards();
+  //   game.removeCard();
+  //   assertEquals(52 , deck.getCards().size());
   // }
 
-  @Test
-  public void checkTheDeck(){
-    // deck.getCards();
-    // game.removeCard();
-    assertEquals(52 , deck.getCards().size());
-  }
+  // @Test
+  // public void print(){
+  //   System.out.println("HERE IT IS");
+  //   System.out.println(game.getDeck());
+  //   System.out.println("HERE IT IS");
 
-  @Test
-  public void print(){
-    System.out.println("HERE IT IS");
-    System.out.println(game.getDeck().value());
-    System.out.println("HERE IT IS");
-
-  }
+  // }
 
   // @Test
   // public void dealsCardsToPlayers(){

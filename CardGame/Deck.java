@@ -30,9 +30,23 @@ public class Deck{
     Collections.shuffle(deck);
   }
 
-  // public ArrayList<Card> getDeck(){
-  //   return this.deck;
-  // }
+   public void removeCard(){
+      deck.remove(0);
+
+   }
+
+   public ArrayList getDeck(){
+     return deck;
+   }
+
+   public void dealCards(){
+     // for (Player player : players){
+       for(int i = 0; i < 3; i++){ 
+         // player.dealHand(deck.get(i));
+         deck.remove(0);
+       }
+     }
+   // }
 
 
 

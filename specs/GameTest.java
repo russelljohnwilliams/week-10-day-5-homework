@@ -59,4 +59,26 @@ public class GameTest{
     System.out.println(player2.showHand());
   }
 
+   @Test
+    public void printCards(){
+      game.addPlayer(player1);
+      game.addPlayer(player2);
+      game.getCards();
+      game.dealCards();
+      ArrayList cards = player1.showHand();
+      for(Object object : cards){
+        Card original = (Card) object;
+        System.out.println("GAME TEST - PRINT PLAYER1 HAND");
+        System.out.println(original.getSuit());
+        System.out.println(original.getNumber());
+      };
+      ArrayList cardy = player2.showHand();
+      for(Object object : cardy){
+        Card original = (Card) object;
+        System.out.println("GAME TEST - PRINT PLAYER2 HAND");
+        System.out.println(original.getSuit());
+        System.out.println(original.getNumber());
+      }
+    }
+
 }

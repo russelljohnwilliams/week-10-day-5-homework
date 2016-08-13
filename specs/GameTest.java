@@ -29,12 +29,18 @@ public class GameTest{
     assertEquals(2, game.countPlayers());
   }
 
-  // @Test
-  // public void checkTheDeck(){
-  //   deck.getCards();
-  //   game.removeCard();
-  //   assertEquals(52 , deck.getCards().size());
-  // }
+  @Test
+  public void printArrayList(){
+    System.out.println("HERE IT IS");
+    System.out.println(game.getArrayList());
+  }
+
+  @Test
+  public void checkTheDeck(){
+    // deck.getCards();
+    game.removeCard();
+    assertEquals(51 , deck.getCards().size());
+  }
 
   // @Test
   // public void print(){
@@ -42,6 +48,14 @@ public class GameTest{
   //   System.out.println(game.getDeck());
   //   System.out.println("HERE IT IS");
 
+  // }
+
+  // @Test
+  // public void dealsCardsToPlayers(){
+  //   deck.getCards();
+  //   deck.dealCards();
+  //   // game.removeCard();
+  //   assertEquals(49, deck.getDeck().size());
   // }
 
   // @Test

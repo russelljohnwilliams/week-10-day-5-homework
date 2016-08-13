@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Deck{
 
-  private ArrayList<Card> deck;
+  public ArrayList<Card> deck;
   private SuitType suits;
   private NumberType numbers;
 
@@ -15,7 +15,7 @@ public class Deck{
     this.numbers = numbers;
   }
 
-  public ArrayList getCards(){
+  public ArrayList<Card> getCards(){
     for (SuitType suit : SuitType.values()){
       for (NumberType number : NumberType.values()){
         Card card = new Card(suit, number);
@@ -35,8 +35,9 @@ public class Deck{
 
    }
 
-   public ArrayList getDeck(){
-     return deck;
+   public ArrayList<Card> getDeck(){
+    // getCards();
+    return this.deck;
    }
 
    public void dealCards(){

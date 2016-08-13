@@ -31,13 +31,12 @@ public class GameTest{
 
   @Test
   public void printArrayList(){
-    System.out.println("HERE IT IS");
+    System.out.println("GAME TEST - GET CARDS");
     System.out.println(game.getCards());
   }
 
   @Test
   public void checkTheDeck(){
-    // deck.getCards();
     game.removeCard();
     assertEquals(51, game.countCards());
   }
@@ -50,48 +49,14 @@ public class GameTest{
   @Test
   public void dealsCardsToPlayers(){
     game.addPlayer(player1);
-    // game.addPlayer(player2);
+    game.addPlayer(player2);
+    // deck.shuffleDeck();
     game.getCards();
     game.dealCards();
-    assertEquals(49, game.countCards());
-    // System.out.println(player1.showHand());
+    assertEquals(46, game.countCards());
+    System.out.println("GAME TEST, SHOW - HAND");
+    System.out.println(player1.showHand());
+    System.out.println(player2.showHand());
   }
 
-  // @Test
-  // public void print(){
-  //   System.out.println("HERE IT IS");
-  //   System.out.println(game.getDeck());
-  //   System.out.println("HERE IT IS");
-  // }
-
-  
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// @Test
-// public void dealsCardsToPlayers(){
-//   // game.addPlayer(player1);
-//   // game.addPlayer(player2);
-//   // game.dealCards();
-//   game.removeCard();
-//   assertEquals(51, deck.getCards().size());
-// }

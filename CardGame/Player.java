@@ -20,6 +20,7 @@ public class Player{
       this.hand.add(card1);
   }
 
+
   public int countHand(){
     return hand.size();
   }

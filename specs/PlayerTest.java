@@ -12,6 +12,8 @@ public class PlayerTest{
   Card card2;
   Card card3;
   Game game;
+  Deck deck;
+
 
   @Before
   public void before(){
@@ -39,8 +41,22 @@ public class PlayerTest{
     player1.dealHand(card1);
     player1.dealHand(card2);
     player1.dealHand(card3);
-    System.out.println("HERE WE ARE");
+    System.out.println("PLAYER TEST - SHOW HAND");
     System.out.println(player1.showHand());
+  }
+
+  @Test
+  public void printHand(){
+    player1.dealHand(card1);
+    player1.dealHand(card2);
+    player1.dealHand(card3);
+    ArrayList hand = player1.showHand();
+    for(Object object : hand){
+      Card original = (Card) object;
+      System.out.println("PLAYER TEST - PRINT HAND");
+      System.out.println(original.getSuit());
+      System.out.println(original.getNumber());
+    }
   }
 
 }

@@ -25,12 +25,12 @@ public class DeckTest{
   }
 
 
-  // @Test
-  // public void checkTheDeck(){
-  //   deck.getCards();
-  //   deck.removeCard();
-  //   assertEquals(51 , deck.getDeck().size());
-  // }
+  @Test
+  public void checkTheDeck(){
+    deck.getCards();
+    deck.removeCard();
+    assertEquals(51 , deck.getDeck().size());
+  }
 
   // @Test
   // public void checkTheDeck(){
@@ -49,16 +49,9 @@ public class DeckTest{
 
   // @Test
   // public void dealsCardsToPlayers(){
-  //   assertEquals()
+  //   assertEquals();
   // }
 
-  // @Test
-  // public void dealsCardsToPlayers(){
-  //   deck.getCards();
-  //   deck.dealCards();
-  //   // game.removeCard();
-  //   assertEquals(49, deck.getDeck().size());
-  // }
 
 
 }

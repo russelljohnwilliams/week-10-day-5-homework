@@ -39,7 +39,22 @@ public class GameTest{
   public void checkTheDeck(){
     // deck.getCards();
     game.removeCard();
-    assertEquals(51 , game.getCards().size());
+    assertEquals(51, game.countCards());
+  }
+
+  @Test
+  public void checkTheDeckforFiftyTwoCards(){
+    assertEquals(52, game.countCards());
+  }
+
+  @Test
+  public void dealsCardsToPlayers(){
+    game.addPlayer(player1);
+    // game.addPlayer(player2);
+    game.getCards();
+    game.dealCards();
+    assertEquals(49, game.countCards());
+    // System.out.println(player1.showHand());
   }
 
   // @Test
@@ -47,24 +62,36 @@ public class GameTest{
   //   System.out.println("HERE IT IS");
   //   System.out.println(game.getDeck());
   //   System.out.println("HERE IT IS");
-
   // }
 
-  // @Test
-  // public void dealsCardsToPlayers(){
-  //   deck.getCards();
-  //   deck.dealCards();
-  //   // game.removeCard();
-  //   assertEquals(49, deck.getDeck().size());
-  // }
-
-  // @Test
-  // public void dealsCardsToPlayers(){
-  //   // game.addPlayer(player1);
-  //   // game.addPlayer(player2);
-  //   // game.dealCards();
-  //   game.removeCard();
-  //   assertEquals(51, deck.getCards().size());
-  // }
+  
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @Test
+// public void dealsCardsToPlayers(){
+//   // game.addPlayer(player1);
+//   // game.addPlayer(player2);
+//   // game.dealCards();
+//   game.removeCard();
+//   assertEquals(51, deck.getCards().size());
+// }

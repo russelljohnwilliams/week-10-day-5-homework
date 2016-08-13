@@ -34,5 +34,14 @@ public class PlayerTest{
     assertEquals(1, player1.countHand());
   }
 
+  @Test
+  public void showPlayersCards(){
+    player1.dealHand(card1);
+    player1.dealHand(card2);
+    player1.dealHand(card3);
+    System.out.println("HERE WE ARE");
+    System.out.println(player1.showHand());
+  }
+
 }
 

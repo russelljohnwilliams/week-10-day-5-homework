@@ -25,6 +25,10 @@ public class Player{
   }
 
 
+  public ArrayList<Card> showHand(){
+      return this.hand;
+  }
+
   
 
 }

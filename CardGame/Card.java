@@ -6,10 +6,8 @@ public class Card{
   NumberType number;
 
   public Card(SuitType suit, NumberType number) {
-
     this.suit = suit;
     this.number = number;
-
   }
 
   public SuitType getSuit(){

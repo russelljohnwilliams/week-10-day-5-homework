@@ -18,7 +18,11 @@ public class Game{
   }
 
 public ArrayList<Card> getCards(){
-  return cards;
+  return this.cards;
+}
+
+public int countCards(){
+  return this.cards.size();
 }
 
 public void addPlayer(Player player){
@@ -34,13 +38,14 @@ public int countPlayers(){
   }
 
 
-  // public void dealCards(){
-    // for (Player player : players){
-    //   for(int i = 0; i < 3; i++){ 
-    //     player.dealHand(cards.get(i));
-        // cards.remove(0);
+  public void dealCards(){
+    for (Player player : this.players){
+      for(int i = 0; i < 3; i++){ 
+        player.dealHand(cards.get(i));
+        cards.remove(i);
  
-      // }
-  //   }
-  // }
+      }
+    }
+      
+  }
 }

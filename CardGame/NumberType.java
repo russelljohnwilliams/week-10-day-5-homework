@@ -2,6 +2,7 @@ package CardGame;
 
 public enum NumberType {
 
+
   TWO,
   THREE,
   FOUR,

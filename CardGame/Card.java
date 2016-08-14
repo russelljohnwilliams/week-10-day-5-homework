@@ -14,6 +14,11 @@ public class Card{
     return this.suit;
   }
 
+//gets the position of the enum and uses it as points scored from cards played.
+  public int getNumbersNumber(){
+    return this.number.ordinal();
+  }
+
   public NumberType getNumber(){
     return this.number;
   }

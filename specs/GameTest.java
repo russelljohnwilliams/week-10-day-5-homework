@@ -51,8 +51,8 @@ public class GameTest{
 
   @Test
   public void printArrayList(){
-    // System.out.println("GAME TEST - GET CARDS");
-    // System.out.println(game.getCards());
+    System.out.println("GAME TEST - GET CARDS");
+    System.out.println(game.getCards());
   }
 
   @Test
@@ -72,16 +72,16 @@ public class GameTest{
     game.getCards();
     game.dealCards();
     assertEquals(46, game.countCards());
-    // System.out.println("GAME TEST, SHOW - HAND");
-    // System.out.println(player1.showHand());
-    // System.out.println(player2.showHand());
+    System.out.println("GAME TEST, SHOW - HAND");
+    System.out.println(player1.getHand());
+    System.out.println(player2.getHand());
   }
 
    @Test
     public void printCards(){
       game.getCards();
       game.dealCards();
-      ArrayList cards = player1.showHand();
+      ArrayList cards = player1.getHand();
       for(Object object : cards){
         Card original = (Card) object;
         System.out.println("GAME TEST - PRINT PLAYER1 HAND");
@@ -89,7 +89,7 @@ public class GameTest{
         System.out.println(original.getNumber());
         System.out.println(original.getNumbersNumber());
       };
-      ArrayList cardy = player2.showHand();
+      ArrayList cardy = player2.getHand();
       for(Object object : cardy){
         Card original = (Card) object;
         System.out.println("GAME TEST - PRINT PLAYER2 HAND");

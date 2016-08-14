@@ -33,15 +33,15 @@ public class DeckTest{
     assertEquals(51 , deck.getDeck().size());
   }
 
-  // @Test
-  // public void printCards(){
-  //   ArrayList cards = deck.getCards();
-  //   for(Object object : cards){
-  //     Card original = (Card) object;
-  //     System.out.println(original.getSuit());
-  //     System.out.println(original.getNumber());
-  //   }
-  // }
+  @Test
+  public void printCards(){
+    ArrayList cards = deck.getCards();
+    for(Object object : cards){
+      Card original = (Card) object;
+      System.out.println(original.getSuit());
+      System.out.println(original.getNumber());
+    }
+  }
 }
 
 

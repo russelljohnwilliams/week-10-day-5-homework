@@ -10,6 +10,9 @@ public class PlayerTest{
   Card card1;
   Card card2;
   Card card3;
+  Card card4;
+  Card card5;
+  Card card6;
   Game game;
   Deck deck;
 
@@ -20,6 +23,9 @@ public class PlayerTest{
     card1 = new Card(SuitType.SPADE, NumberType.ACE);
     card2 = new Card(SuitType.HEART, NumberType.FOUR);
     card3 = new Card(SuitType.DIAMOND, NumberType.KING);
+    card4 = new Card(SuitType.HEART, NumberType.FIVE);
+    card5 = new Card(SuitType.CLUB, NumberType.FOUR);
+    card6 = new Card(SuitType.CLUB, NumberType.SIX);
     game = new Game();
   }
 
@@ -40,7 +46,7 @@ public class PlayerTest{
     player1.dealHand(card2);
     player1.dealHand(card3);
     // System.out.println("PLAYER TEST - SHOW HAND");
-    // System.out.println(player1.showHand());
+    // System.out.println(player1.getHand());
   }
 
   @Test
@@ -48,7 +54,7 @@ public class PlayerTest{
     player1.dealHand(card1);
     player1.dealHand(card2);
     player1.dealHand(card3);
-    ArrayList hand = player1.showHand();
+    ArrayList hand = player1.getHand();
     for(Object object : hand){
       // Card original = (Card) object;
       // System.out.println("PLAYER TEST - PRINT HAND");
@@ -64,6 +70,14 @@ public class PlayerTest{
     player1.dealHand(card3);
     assertEquals(25, player1.totalValueOfHand());
   }
+
+  // @Test
+  // public boolean checkForPrial(){
+  //   player1.dealHand(card4);
+  //   player1.dealHand(card5);
+  //   player1.dealHand(card6);
+  //   assertEquals(true, player1.checkForPrial());  
+  // }
 
 }
 

@@ -28,7 +28,7 @@ public class Player{
     return hand.size();
   }
 
-  public ArrayList<Card> showHand(){
+  public ArrayList<Card> getHand(){
     return this.hand;
   }
 
@@ -43,6 +43,17 @@ public class Player{
     return total;
   }
 
+  public boolean checkForPrial(){
+    int card1 = hand.get(0).getNumbersNumber(); 
+    int card2 = hand.get(1).getNumbersNumber(); 
+    int card3 = hand.get(2).getNumbersNumber(); 
+      if (((card2 == card1 + 1) || (card2 == card1 - 1)) && ((card3 == card1 + 1) || (card3 == card1 - 1))){
+        return true;
+      } else {
+        return false;
+      }
+    }
+  
 
 }
 

@@ -99,18 +99,19 @@ public class GameTest{
       }
     }
 
-   // @Test
-   // public void weHaveAWinner(){
-   //   player1.dealHand(card1);
-   //   player1.dealHand(card2);
-   //   player1.dealHand(card3);
-   //   player2.dealHand(card4);
-   //   player2.dealHand(card5);
-   //   player2.dealHand(card6);
-   //   System.out.println(player1.totalValueOfHand());
-   //   System.out.println(player2.totalValueOfHand());
-   //   assertEquals(player2, game.searchForAWinner());
-   // }
+   @Test
+   public void weHaveAWinner(){
+     player1.dealHand(card1);
+     player1.dealHand(card2);
+     player1.dealHand(card3);
+     player2.dealHand(card4);
+     player2.dealHand(card5);
+     player2.dealHand(card6);
+     System.out.println(player1.totalValueOfHand());
+     System.out.println(player2.totalValueOfHand());
+     assertEquals(player2, game.searchForAWinner());
+     assertEquals(player2, game.searchForAWinner());
+   }
 
 }
 

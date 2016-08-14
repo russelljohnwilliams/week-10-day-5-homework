@@ -51,17 +51,17 @@ public class Game{
     }
   }
 
-
-  // public Object searchForAWinner(){
-  //   int player1 = players.get(0).totalValueOfHand();
-  //   int player2 = players.get(1).totalValueOfHand();
-  //   if (player1 > player2){
-  //     return players.get(0);
-  //   }
-  //   else {
-  //     return players.get(1);
-  //   }
-  // }
+  public Object searchForAWinner(){
+    int play1 = players.get(0).totalValueOfHand();
+    int play2 = players.get(1).totalValueOfHand();
+    if (play1 > play2){
+      return players.get(0);
+    } else if (play1 == play2){
+      return null;
+    } else {
+      return players.get(1);
+    }
+  }
 
 }
 
